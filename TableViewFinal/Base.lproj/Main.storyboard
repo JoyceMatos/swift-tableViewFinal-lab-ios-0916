@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5OW-gV-i0t">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -10,20 +10,27 @@
         <scene sceneID="94T-op-S92">
             <objects>
                 <tableViewController id="55p-4n-AAx" customClass="PlanetTableViewController" customModule="TableViewFinal" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="dLB-D9-dxP">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="148" sectionHeaderHeight="28" sectionFooterHeight="28" id="dLB-D9-dxP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlanetCell" rowHeight="148" id="v2f-64-tD6" customClass="PlanetTableViewCell" customModule="TableViewFinal" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlanetCell" id="v2f-64-tD6" customClass="PlanetTableViewCell" customModule="TableViewFinal" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="375" height="148"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v2f-64-tD6" id="XcU-wV-sBc">
                                     <frame key="frameInset" width="375" height="147"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LC8-1H-2fb">
+                                            <frame key="frameInset" minX="261" minY="55" width="87" height="35"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
+                                            <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                         <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="dpi-hi-PcV">
-                                            <frame key="frameInset" minX="15" minY="8" width="88" height="164"/>
+                                            <frame key="frameInset" minX="22" minY="-10" width="88" height="164"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPJ-JQ-GuX">
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="36"/>
@@ -42,13 +49,6 @@
                                                 </label>
                                             </subviews>
                                         </stackView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LC8-1H-2fb">
-                                            <frame key="frameInset" minX="261" minY="55" width="87" height="35"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
-                                            <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="dpi-hi-PcV" firstAttribute="leading" secondItem="XcU-wV-sBc" secondAttribute="leading" id="JPH-si-vwP"/>
@@ -80,12 +80,12 @@
         <scene sceneID="z6J-5S-vA0">
             <objects>
                 <tableViewController id="tHK-zd-5hJ" customClass="FactTableViewController" customModule="TableViewFinal" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="NBv-W1-qsJ">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="155" sectionHeaderHeight="28" sectionFooterHeight="28" id="NBv-W1-qsJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FactCell" rowHeight="155" id="KNN-ZU-BcX" customClass="FactTableViewCell" customModule="TableViewFinal" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FactCell" id="KNN-ZU-BcX" customClass="FactTableViewCell" customModule="TableViewFinal" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="375" height="155"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KNN-ZU-BcX" id="NLH-da-Tzx">
@@ -100,10 +100,10 @@
                                         </textView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="RWH-f2-Bev" firstAttribute="leading" secondItem="NLH-da-Tzx" secondAttribute="leading" id="7pg-xz-q5o"/>
-                                        <constraint firstAttribute="trailing" secondItem="RWH-f2-Bev" secondAttribute="trailing" id="ScG-fF-SAI"/>
-                                        <constraint firstAttribute="bottom" secondItem="RWH-f2-Bev" secondAttribute="bottom" constant="-9" id="kJf-uU-olP"/>
-                                        <constraint firstItem="RWH-f2-Bev" firstAttribute="top" secondItem="NLH-da-Tzx" secondAttribute="top" constant="-28" id="rE7-S3-Vgd"/>
+                                        <constraint firstItem="RWH-f2-Bev" firstAttribute="leading" secondItem="NLH-da-Tzx" secondAttribute="leading" id="4CR-ON-tYi"/>
+                                        <constraint firstAttribute="bottom" secondItem="RWH-f2-Bev" secondAttribute="bottom" id="bTm-Jd-how"/>
+                                        <constraint firstAttribute="trailing" secondItem="RWH-f2-Bev" secondAttribute="trailing" id="keY-D8-BdV"/>
+                                        <constraint firstItem="RWH-f2-Bev" firstAttribute="top" secondItem="NLH-da-Tzx" secondAttribute="top" constant="-8" id="tP9-C7-mdh"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
